@@ -2910,31 +2910,61 @@ var _s = $RefreshSig$();
 function App() {
     _s();
     const [color, setColor] = (0, _react.useState)("#FFFFFF");
+    const changeColor = (array)=>{
+        setColor(array[Math.floor(Math.random() * array.length)]);
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "App",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Button, {
-            color: color
+            color: color,
+            changeColor: changeColor
         }, void 0, false, {
             fileName: "src/index.js",
-            lineNumber: 10,
+            lineNumber: 14,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "src/index.js",
-        lineNumber: 9,
+        lineNumber: 13,
         columnNumber: 9
     }, this);
 }
-_s(App, "UKgYO03g74KWnbKBywImwFaHiMY=");
+_s(App, "9Dalu1gxV+BOh2xiGhQ629tabOc=");
 _c = App;
-const rootElement = document.querySelector(".root");
+const Button = (props)=>{
+    const colors = [
+        "#FFBAAA",
+        "#27576B",
+        "#D47F6A",
+        "#AA7539",
+        "#003D19",
+        "#6E91A1",
+        "#552D00"
+    ];
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+        style: {
+            background: props.color,
+            height: "50px",
+            width: "200px"
+        },
+        onClick: ()=>props.changeColor(colors),
+        children: "Click Me!"
+    }, void 0, false, {
+        fileName: "src/index.js",
+        lineNumber: 31,
+        columnNumber: 9
+    }, undefined);
+};
+_c1 = Button;
+const rootElement = document.getElementById("root");
 (0, _reactDomDefault.default).render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(App, {}, void 0, false, {
     fileName: "src/index.js",
-    lineNumber: 18,
+    lineNumber: 43,
     columnNumber: 17
 }, undefined), rootElement);
-var _c;
+var _c, _c1;
 $RefreshReg$(_c, "App");
+$RefreshReg$(_c1, "Button");
 
   $parcel$ReactRefreshHelpers$20e5.postlude(module);
 } finally {
