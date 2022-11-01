@@ -2912,7 +2912,7 @@ _c = App;
 const rootElement = document.getElementById("root");
 (0, _reactDomDefault.default).render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(App, {}, void 0, false, {
     fileName: "src/index.js",
-    lineNumber: 11,
+    lineNumber: 10,
     columnNumber: 17
 }, undefined), rootElement);
 var _c;
